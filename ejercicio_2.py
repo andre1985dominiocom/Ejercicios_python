@@ -3,3 +3,15 @@
 #legales tienen derecho a este rubro.
 
 #Variables
+salario=1400000
+
+salario_empleados=int(input("Ingresar el salario del empleado : "))
+
+
+if salario_empleados <= salario*2:
+    print("Derecho auxilio de transporte : ")
+
+else:
+    print("Sin derecho auxilio de transporte : ")
+
+
