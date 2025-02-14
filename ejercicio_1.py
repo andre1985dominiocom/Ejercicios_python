@@ -16,10 +16,10 @@ x_student=int(input("Ingresar el estudiante a calificar: "))
 print("Las horas que se necesitan son: ")
 time=n_question*x_student
 if x_student < 0:
-    x_student = 0
+    x_student = 1
     print("El número de estudiantes es : ")
 elif n_question < 0:
-    n_question = 0
+    n_question = 1
     print("Sumar el número de preguntas : ")
 
 
