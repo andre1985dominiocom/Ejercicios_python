@@ -7,7 +7,7 @@
 
 #Variables
 time = min
-contador = 0
+counter = 0
 
 #Resolver el algoritmo 
 
