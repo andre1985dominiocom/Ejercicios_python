@@ -10,24 +10,28 @@ print("Programa para implementar un reloj digital")
 import time
 
 #Iniciar las variables
-Hours = 1
+Hours = 0
 minutes = 0
 Seconds = 0
 
 #Utilizar bucles
-while Hours < 24:
+while Hours <= 12:
     print (f"{Hours}:{minutes}:{Seconds} ")
-    break
+    if Seconds == 60:
+        Seconds = 0
+        minutes += 1
+    if minutes == 60:
+        minutes = 0
+        Hours += 1
+        Seconds += 1
+
 #Incrementar los segundos
-Seconds += 1
 
 #Utilizar condicionante para verificar que los segundos lleguen a 60
-if Seconds == 0:
-    Seconds = 60
-    minutes += 1
-    
+
+
 #Esperar un segundo antes de continuar
-time.sleep(1)
+#time.sleep(1)
 
 #Mostrar resultados
 print("El reloj ha terminaddo ")
