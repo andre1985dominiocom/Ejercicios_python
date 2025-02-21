@@ -2,16 +2,17 @@
 #conoce que todos los empleados que devengan un salario menor o igual a dos salarios mínimos
 #legales tienen derecho a este rubro.
 
-#Variables
-salario=1400000
+#Imprimir título
+print("Programa para calcular el auxilio de transporte: ")
 
-salario_empleados=int(input("Ingresar el salario del empleado : "))
+#Definir el valor del salario minimo legal
+salary = 1400000
 
+#Solicitar el salario del empleado
+employee_salary = float(input("Ingresar el salario del empleado: "))
 
-if salario_empleados <= salario*2:
-    print("Derecho auxilio de transporte : ")
-
+#Se utiliza condicionnates para comparar el salaro de los empleados
+if employee_salary <= 2 * salary:
+    print("Derecho auxilio de transporte.")
 else:
-    print("Sin derecho auxilio de transporte : ")
-
-
+    print("Sin derecho auxilio de transporte. ")

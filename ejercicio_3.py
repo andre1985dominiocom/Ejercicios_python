@@ -12,23 +12,33 @@
 #cuando en el examen final obtenga nota mayor o igual a 2.0, en este caso la nota definitiva será
 #la que obtenga en la habilitación.
 
-#Variables
+#Imprimir título
+print("Programa para calcular la nota definitiva de los estudiantes")
 
-Parcial_1 = 0.30
-Parcial_2 = 0.30
-Parcial_3 = 0.40
+#Solicitar las notas de los dos parciales y el examen final
+Exam_1 = float(input("Ingrese la nota del primer parcial (0.0 - 5.0): "))
+Exam_2 = float(input("Ingrese la nota del segundo parcial (0.0 - 5.0): "))
+Final_exam = float(input("Ingrese la nota del examen final (0.0 - 5.0): "))
 
-Nota_def = float(input("Ingresar el valor de la nota : "))
-print = ("Mostrar la nota definitiva : ")
+#Calacular el promedio de los dos parciales
+Average = (Exam_1 + Exam_2) / 2
 
-if Nota_def > 3.0:
-    print("Aprobado")
+#Utilizar condicinantes para verificar si el estudiante puede presentar el examen final
+if Average < 2.0:
+    Final_note = Average
+    print(f"El estudiante no puede presentar el examen final {Final_note} ")
+else: 
+    if Final_exam > 2.0:
+        Final_note = Final_exam
+        print(f"Nota definitva: {Final_note}")
+    else:
+        Final_note = (Exam_1 * 0.3) + (Exam_2 * 0.3) + (Final_exam * 0.4)
+        print(f"Nota definitiva: {Final_note} ")
 
-elif Nota_def < 2.0:
-    print("No presenta examen")
-
-prom_final = ((Parcial_1 + Parcial_2 + Parcial_3)/3) * 0.30 + 0.30 + 0.40
-
-print("El promedio final es : " , {prom_final} )
-
-
+if Final_note >= 3.0:
+    print("El estudiante aprueba la asignatura ")
+else:
+    if Final_exam >= 2.0:
+        print("El estudiante puede habilitar la asignatura ")
+    else:
+        print("El estudiante reprueba la asigntura ")

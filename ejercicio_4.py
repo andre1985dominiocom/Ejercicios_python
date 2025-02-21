@@ -5,3 +5,34 @@
 #determinar cuánto recibirá un cliente por un depósito, tanto por concepto de interés como en
 #total.
 
+#Imprimir título
+print("Programa para calcular los intereses pagados por un cliente")
+
+#Solicitar el monto del depósito y el tiempo en meses
+Deposit = float(input("Ingrese el monto del depósito: "))
+Month_time = int(input("Ingrese el tiempo del depósito en meses: "))
+
+#Utilizar condicionantes para calcular la tasa de interés
+if Month_time <= 6:
+    interest_rate = 0.08
+elif Month_time <= 12:
+    interest_rate = 0.10
+elif Month_time <= 18:
+    interest_rate = 0.12
+elif Month_time <= 24:
+    interest_rate = 0.15
+else:
+    interest_rate = 0.18
+
+#Calcular el interés generado
+General_interest = Deposit * interest_rate * (Month_time / 12)
+
+#Calcular el total a recibido
+Total_received = Deposit + interest_rate
+
+#Mostrar resultados
+print(f"Interés generado: {interest_rate} ")
+print(f"Total recibido: {Total_received} ")
+
+
+
