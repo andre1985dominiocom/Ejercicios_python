@@ -18,16 +18,14 @@ Seconds = 0
 while Hours < 24:
     print (f"{Hours}:{minutes}:{Seconds} ")
     break
-    
 #Incrementar los segundos
 Seconds += 1
 
 #Utilizar condicionante para verificar que los segundos lleguen a 60
-if Seconds == 60:
-    Seconds = 0
+if Seconds == 0:
+    Seconds = 60
     minutes += 1
     
-
 #Esperar un segundo antes de continuar
 time.sleep(1)
 
