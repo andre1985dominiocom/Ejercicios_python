@@ -11,7 +11,7 @@ salary = 1400000
 #Solicitar el salario del empleado
 employee_salary = float(input("Ingresar el salario del empleado: "))
 
-#Se utiliza condicionnates para comparar el salaro de los empleados
+#Se utiliza sentencias para comparar el salaro de los empleados
 if employee_salary <= 2 * salary:
     print("Derecho auxilio de transporte.")
 else:

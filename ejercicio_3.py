@@ -23,7 +23,7 @@ Final_exam = float(input("Ingrese la nota del examen final (0.0 - 5.0): "))
 #Calacular el promedio de los dos parciales
 Average = (Exam_1 + Exam_2) / 2
 
-#Utilizar condicinantes para verificar si el estudiante puede presentar el examen final
+#Utilizar sentencias para verificar si el estudiante puede presentar el examen final
 if Average < 2.0:
     Final_note = Average
     print(f"El estudiante no puede presentar el examen final {Final_note} ")

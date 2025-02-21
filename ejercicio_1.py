@@ -14,7 +14,7 @@ n = int(input("Ingresar el número de preguntas (n) : "))
 m = int(input("Ingresar el número por preguntas en minutos (m) : "))
 x = int(input("Ingresar el número de estudiantes (x) : "))
 
-#Utilizar condicionantes para validar que los valores sean positivos
+#Utilizar sentencias para validar que los valores sean positivos
 if n < 0 or m < 0 or x < 0:
     print("Error: Todos los valores deben ser positivos: ")
 else: 

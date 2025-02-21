@@ -9,3 +9,21 @@
 #▪ Dependiendo de la suma del valor del ejército y el número de integrantes.
 #▪ Cada ejército puede estar compuesto por un número de integrantes variable de cada raza.
 #▪ Tienes total libertad para modelar los datos del ejercicio.
+
+#Imprimir título
+print("Programa para definir el ganador, el perdedor o el empate en la batalla por la Tierra Media: ")
+
+#Variable de los Valores de las razas
+Race_values = {
+        "Pelosos": 1 ,
+        "Sureños buenos": 2 ,
+        "Enanos": 3 ,
+        "Númenóreanos": 4 ,
+        "Elfos": 5 ,
+        "Sureños malos": 2 ,
+        "Orcos": 2 ,
+        "Goblins": 2 ,
+        "Huargos": 3 ,
+        "Trolls": 5 
+}
+

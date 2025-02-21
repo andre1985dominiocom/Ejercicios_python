@@ -11,7 +11,7 @@ X = int(input("Ingresar el valor de referencia x: "))
 Weight = float(input("Ingresar el peso del producto en gramos: "))
 Product = input("Ingresar el producto (plata, platino y oro): ")
 
-#Utilizar condicionantes para calcular el costo por gramo de los productos
+#Utilizar sentencias para calcular el costo por gramo de los productos
 if Product == "plata":
     Cost_gram = 3 * X
 elif Product == "platino":

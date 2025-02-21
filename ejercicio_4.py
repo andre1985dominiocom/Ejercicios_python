@@ -12,7 +12,7 @@ print("Programa para calcular los intereses pagados a los clientes")
 Deposit = int(input("Ingrese el monto del depósito: "))
 Month_time = int(input("Ingrese el tiempo del depósito en meses: "))
 
-#Utilizar condicionantes para calcular la tasa de interés
+#Utilizar sentencias para calcular la tasa de interés
 if Month_time <= 6:
     interest_rate = 0.08
 elif Month_time <= 12:

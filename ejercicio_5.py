@@ -9,7 +9,7 @@ print("Programa para calcular el descuento a pagar por una motocicleta: ")
 Motorcycle_value = int(input("Ingrese el valor de la motocicleta: "))
 Brand = input("ingrese la marca de la motocicleta (Honda, Yamaha, Suzuki, Otra): ")
 
-#Utilizar condicionantes para determinar el descuento
+#Utilizar sentencias para determinar el descuento
 if Brand == "Honda":
     Discount = 0.05
 elif Brand == "Yamaha":
