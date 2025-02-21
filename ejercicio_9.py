@@ -15,9 +15,10 @@ minutes = 0
 Seconds = 0
 
 #Utilizar bucles
-while Hours < 13:
+while Hours < 24:
     print (f"{Hours}:{minutes}:{Seconds} ")
-
+    break
+    
 #Incrementar los segundos
 Seconds += 1
 
@@ -25,6 +26,7 @@ Seconds += 1
 if Seconds == 60:
     Seconds = 0
     minutes += 1
+    
 
 #Esperar un segundo antes de continuar
 time.sleep(1)

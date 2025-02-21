@@ -6,7 +6,7 @@
 print("Programa para calcular el descuento a pagar por una motocicleta: ")
 
 #Solicitar los valores de las motocicletas y las marcas
-Motorcycle_value = float(input("Ingrese el valor de la motocicleta: "))
+Motorcycle_value = int(input("Ingrese el valor de la motocicleta: "))
 Brand = input("ingrese la marca de la motocicleta (Honda, Yamaha, Suzuki, Otra): ")
 
 #Utilizar condicionantes para determinar el descuento

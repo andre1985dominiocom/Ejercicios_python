@@ -6,10 +6,10 @@
 #total.
 
 #Imprimir título
-print("Programa para calcular los intereses pagados por un cliente")
+print("Programa para calcular los intereses pagados a los clientes")
 
 #Solicitar el monto del depósito y el tiempo en meses
-Deposit = float(input("Ingrese el monto del depósito: "))
+Deposit = int(input("Ingrese el monto del depósito: "))
 Month_time = int(input("Ingrese el tiempo del depósito en meses: "))
 
 #Utilizar condicionantes para calcular la tasa de interés
@@ -32,7 +32,6 @@ Total_received = Deposit + interest_rate
 
 #Mostrar resultados
 print(f"Interés generado: {interest_rate} ")
+
+
 print(f"Total recibido: {Total_received} ")
-
-
-

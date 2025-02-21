@@ -7,7 +7,7 @@
 print("Programa para calcular el precio de los productos en una joyería")
 
 #Solicitar el valor de referencia x, el peso y el material
-X = float(input("Ingresar el valor de referencia x: "))
+X = int(input("Ingresar el valor de referencia x: "))
 Weight = float(input("Ingresar el peso del producto en gramos: "))
 Product = input("Ingresar el producto (plata, platino y oro): ")
 

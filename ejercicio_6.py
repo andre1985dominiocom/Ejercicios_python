@@ -8,7 +8,7 @@
 print("Prograna para calcular el monto del descuento por adquirir un seguro")
 
 #Solcitar el monto del seguro
-Safe = float(input("Ingrese el monto del seguro: "))
+Safe = int(input("Ingrese el monto del seguro: "))
 
 #Utilizar condicionantes para calcular el porcentaje a pagar
 if Safe < 5000000:
