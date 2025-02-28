@@ -52,3 +52,4 @@ while True:
             break
     except ValueError:
         print("Formato de fecha incorrecto. Usa dd/mm/aaaa: ")
+    finally: 

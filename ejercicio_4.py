@@ -25,7 +25,7 @@ else:
     interest_rate = 0.18
 
 #Calcular el interés generado
-General_interest = Deposit * interest_rate * (Month_time / 12)
+General_interest = Deposit * interest_rate * (Month_time // 12)
 
 #Calcular el total a recibido
 Total_received = Deposit + interest_rate
